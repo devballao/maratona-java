@@ -11,7 +11,7 @@ public class CalculadoraTest {
         calculadora.multiplicaDoisNumeros(10, 20);
 
         // Teste do método de divisão com retorno
-        double divisaoResult = calculadora.divideDoisNumeros(10, 20);
+        double divisaoResult = calculadora.divideDoisNumeros(20, 10);
         System.out.println("Resultado da divisão: " + divisaoResult);
     }
 }
