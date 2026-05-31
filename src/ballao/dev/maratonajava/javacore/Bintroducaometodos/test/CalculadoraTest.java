@@ -13,5 +13,10 @@ public class CalculadoraTest {
         // Teste do método de divisão com retorno
         double divisaoResult = calculadora.divideDoisNumeros(20, 10);
         System.out.println("Resultado da divisão: " + divisaoResult);
+
+        // Testando o método de alterar dois numeros
+        int num1 = 10;
+        int num2 = 20;
+        calculadora.alteraDoisNumeros(num1, num2);
     }
 }

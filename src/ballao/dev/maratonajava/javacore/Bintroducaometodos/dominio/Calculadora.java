@@ -21,4 +21,11 @@ public class Calculadora {
             return 0;
         }
     }
+
+    public void alteraDoisNumeros(int num1, int num2) {
+        num1 = 99;
+        num2 = 33;
+        System.out.println("Dentro do altera dois numeros");
+        System.out.println("Num1: " + num1 + " Num2: " + num2);
+    }
 }
