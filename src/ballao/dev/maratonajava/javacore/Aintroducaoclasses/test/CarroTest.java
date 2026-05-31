@@ -21,5 +21,11 @@ public class CarroTest {
         System.out.println("\nNome: " + carro2.nome);
         System.out.println("Modelo: " + carro2.modelo);
         System.out.println("Ano: " + carro2.ano);
+
+        carro1 = carro2;
+        System.out.println("\nReferencia de objeto");
+        System.out.println("Nome: " + carro1.nome);
+        System.out.println("Modelo: " + carro1.modelo);
+        System.out.println("Ano: " + carro1.ano);
     }
 }
