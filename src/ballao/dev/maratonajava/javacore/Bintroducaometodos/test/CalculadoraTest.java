@@ -9,5 +9,9 @@ public class CalculadoraTest {
         calculadora.somaDoisNumeros();
         calculadora.subtraDoisNumeros();
         calculadora.multiplicaDoisNumeros(10, 20);
+
+        // Teste do método de divisão com retorno
+        double divisaoResult = calculadora.divideDoisNumeros(10, 20);
+        System.out.println("Resultado da divisão: " + divisaoResult);
     }
 }
