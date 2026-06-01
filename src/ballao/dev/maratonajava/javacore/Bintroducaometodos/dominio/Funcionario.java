@@ -8,12 +8,21 @@ public class Funcionario {
     public void imprimeDados() {
         System.out.println("Nome:" + this.nome);
         System.out.println("Idade: " + this.idade);
+
+        if (this.salario == null) {
+            return;
+        }
+
         for (double s : this.salario) {
             System.out.println("Salario: " + s);
         }
     }
 
     public void mediaSalario() {
+        if (this.salario == null) {
+            return;
+        }
+
         double total = 0;
         int tamanho = this.salario.length;
         double resultado = 0;
