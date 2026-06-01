@@ -5,18 +5,25 @@ public class Anime {
     private String nome;
     private int episodios;
     private String genero;
+    private String studio;
 
     // CONSTRUCTORS
-
-
     public Anime(String tipo, String nome, int episodios, String genero) {
+        this();
         this.tipo = tipo;
         this.nome = nome;
         this.episodios = episodios;
         this.genero = genero;
     }
 
-    public Anime() {}
+    public Anime(String tipo, String nome, int episodios, String genero, String studio) {
+        this(tipo, nome, episodios, genero);
+        this.studio = studio;
+    }
+
+    public Anime() {
+
+    }
 
     // METHODS
     public void init(String tipo, String nome, int episodios) {
@@ -71,6 +78,7 @@ public class Anime {
         return "Nome: " + nome +
                 "\nTipo: " + tipo +
                 "\nEpisodios: " + episodios +
-                "\nGenero: " + genero;
+                "\nGenero: " + genero +
+                "\nStudio: " + studio;
     }
 }
