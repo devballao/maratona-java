@@ -1,10 +1,25 @@
 package ballao.dev.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salario;
+    private String nome;
+    private int idade;
+    private double[] salario;
+    private double media;
 
+    // SETERS
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setSalario(double[] salario) {
+        this.salario = salario;
+    }
+
+    // METHODS
     public void imprimeDados() {
         System.out.println("Nome:" + this.nome);
         System.out.println("Idade: " + this.idade);
@@ -23,14 +38,13 @@ public class Funcionario {
             return;
         }
 
-        double total = 0;
+        media = 0;
         int tamanho = this.salario.length;
-        double resultado = 0;
 
         for (double s : this.salario) {
-            total += s;
+            media += s;
         }
-        resultado = total / tamanho;
-        System.out.println("Media salarial: " + resultado);
+        media /= tamanho;
+        System.out.println("Media salarial: " + media);
     }
 }
