@@ -18,5 +18,12 @@ public class CalculadoraTest {
         int num1 = 10;
         int num2 = 20;
         calculadora.alteraDoisNumeros(num1, num2);
+
+        //Soma Array
+        int[] numeros = {1, 2, 3, 4, 5};
+        calculadora.somaArray(numeros);
+
+        // Usando Varargs
+        calculadora.somaVarargs(1, 2, 3, 4, 5);
     }
 }

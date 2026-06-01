@@ -28,4 +28,21 @@ public class Calculadora {
         System.out.println("Dentro do altera dois numeros");
         System.out.println("Num1: " + num1 + " Num2: " + num2);
     }
+
+    public void somaArray(int[] numeros) {
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println("Soma do array: " + soma);
+    }
+
+    // Usando Varargs
+    public void somaVarargs(int... numeros) {
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println("Soma do array: " + soma);
+    }
 }
