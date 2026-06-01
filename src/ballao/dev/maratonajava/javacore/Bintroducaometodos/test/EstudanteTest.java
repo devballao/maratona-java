@@ -19,5 +19,9 @@ public class EstudanteTest {
 
         impressora.imprimir(estudante01);
         impressora.imprimir(estudante02);
+
+        // Usando o metodo direto da classe com this
+        estudante01.imprimir();
+        estudante02.imprimir();
     }
 }
