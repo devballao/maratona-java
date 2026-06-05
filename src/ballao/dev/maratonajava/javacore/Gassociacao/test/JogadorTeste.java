@@ -10,11 +10,9 @@ public class JogadorTeste {
         Jogador jogador3 = new Jogador("Cafu");
         Jogador[] jogadores = {jogador1, jogador2, jogador3};
 
-        Time time = new Time("Seleção Brasileira");
-        jogador1.setTime(time);
+        Time time = new Time("Brasil", jogadores);
+        time.imprimir();
 
-        for (Jogador jogador : jogadores) {
-            jogador.imprimir();
-        }
+        jogador1.imprimir();
     }
 }

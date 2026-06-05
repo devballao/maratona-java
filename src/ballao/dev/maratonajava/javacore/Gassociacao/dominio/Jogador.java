@@ -8,6 +8,11 @@ public class Jogador {
         this.nome = nome;
     }
 
+    public Jogador(String nome, Time time) {
+        this.nome = nome;
+        this.time = time;
+    }
+
     public void imprimir() {
         System.out.println("------------------");
         System.out.println("Nome: " + this.nome);
