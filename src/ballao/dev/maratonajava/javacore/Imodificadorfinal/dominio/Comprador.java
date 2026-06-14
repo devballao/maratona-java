@@ -1,12 +1,13 @@
 package ballao.dev.maratonajava.javacore.Imodificadorfinal.dominio;
 
-public class Carro {
+public class Comprador {
     private String nome;
-    public static final double VELOCIDADE_LIMITE = 250;
-    private final Comprador COMPRADOR =  new Comprador();
 
-    public Comprador getCOMPRADOR() {
-        return COMPRADOR;
+    @Override
+    public String toString() {
+        return "Comprador{" +
+                "nome='" + nome + '\'' +
+                '}';
     }
 
     public String getNome() {
