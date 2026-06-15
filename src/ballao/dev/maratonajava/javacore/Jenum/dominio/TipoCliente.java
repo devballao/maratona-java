@@ -7,7 +7,7 @@ public enum TipoCliente {
     public final int VALOR;
     public final String NOME_RELATORIO;
 
-    TipoCliente(int valor,  String nomeRelatorio) {
+    TipoCliente(int valor, String nomeRelatorio) {
         this.VALOR = valor;
         this.NOME_RELATORIO = nomeRelatorio;
     }
