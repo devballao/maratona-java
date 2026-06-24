@@ -2,6 +2,7 @@ package ballao.dev.maratonajava.javacore.Mpolimorfismo.test;
 
 import ballao.dev.maratonajava.javacore.Mpolimorfismo.dominio.Computador;
 import ballao.dev.maratonajava.javacore.Mpolimorfismo.dominio.Produto;
+import ballao.dev.maratonajava.javacore.Mpolimorfismo.dominio.Televisao;
 import ballao.dev.maratonajava.javacore.Mpolimorfismo.dominio.Tomate;
 import ballao.dev.maratonajava.javacore.Mpolimorfismo.servico.CalculadoraImposto;
 
@@ -10,9 +11,9 @@ public class ProdutoTest {
         Computador computador = new Computador("NUC10i7", 11000.0);
         Tomate tomate = new Tomate("Tomate Siciliano", 10.0);
 
-        CalculadoraImposto.calcularImpostoComputador(computador);
+        CalculadoraImposto.calcularImposto(computador);
         System.out.println("---------------------");
-        CalculadoraImposto.calcularImpostoTomate(tomate);
+        CalculadoraImposto.calcularImposto(tomate);
 
         System.out.println("---------------------");
         System.out.println("Polimorfismo");
@@ -24,5 +25,10 @@ public class ProdutoTest {
         Produto produto2 = new Tomate("Tomate Siciliano", 10.0);
         System.out.println(produto2.getNome());
         System.out.println(produto2.getValor());
+
+
+        System.out.println("---------------------");
+        Televisao televisao = new Televisao("TV Samsung 50\"", 5000.0);
+        CalculadoraImposto.calcularImposto(televisao);
     }
 }
