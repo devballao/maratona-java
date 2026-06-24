@@ -30,5 +30,9 @@ public class ProdutoTest {
         System.out.println("---------------------");
         Televisao televisao = new Televisao("TV Samsung 50\"", 5000.0);
         CalculadoraImposto.calcularImposto(televisao);
+
+        System.out.println("---------------------");
+        tomate.setDataValidade("10/10/2024");
+        CalculadoraImposto.calcularImposto(tomate);
     }
 }
