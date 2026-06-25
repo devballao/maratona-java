@@ -1,4 +1,4 @@
-package ballao.dev.maratonajava.javacore.Nexecoes.test;
+package ballao.dev.maratonajava.javacore.Nexecoes.error.test;
 
 public class StackOverflowTest {
     public static void main(String[] args) {
