@@ -1,6 +1,6 @@
 package ballao.dev.maratonajava.javacore.Nexecoes.runtime.test;
 
-public class RuntimeExeptioTest02 {
+public class RuntimeExeptionTest02 {
     public static void main(String[] args) {
         try {
             System.out.println(divisao(10, 0));
