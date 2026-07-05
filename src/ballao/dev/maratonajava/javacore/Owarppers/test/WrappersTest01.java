@@ -1,4 +1,6 @@
-package ballao.dev.maratonajava.javacore.Mwarppers.test;
+package ballao.dev.maratonajava.javacore.Owarppers.test;
+
+import java.util.Scanner;
 
 public class WrappersTest01 {
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class WrappersTest01 {
         boolean booleanP = false;
 
         // Mostrando os Wrappers
-        Byte byteW = 127;
+        Byte byteW = 127; //autoboxing
         Short shortW = 1;
         Integer intW = 1;
         Long longW = 10L;
@@ -20,5 +22,13 @@ public class WrappersTest01 {
         Double doubleW = 10D;
         Character charW = 'W';
         Boolean booleanW = false;
+
+        int i = intW; // unboxing
+        Integer j = Integer.parseInt("1"); // String to Integer;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite seu nome: ");
+        String s = sc.nextLine().toUpperCase();
+        System.out.println("Seu nome é " + s);
     }
 }
