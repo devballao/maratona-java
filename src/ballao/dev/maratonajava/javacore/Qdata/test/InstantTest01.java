@@ -17,5 +17,7 @@ public class InstantTest01 {
         System.out.println(now.atZone(ZoneId.of("America/Sao_Paulo")));
         System.out.println(now.atZone(ZoneId.of("Asia/Tokyo")));
         System.out.println(now.atZone(ZoneId.of("Europe/London")));
+
+        System.out.println(now.atZone(ZoneId.systemDefault()));
     }
 }
